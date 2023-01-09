@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BA68CEC296BF29D00644531 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BA68CEE296BF29D00644531 /* Localizable.strings */; };
+		4BA68CF1296BF41900644531 /* chooseMoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA68CF0296BF41900644531 /* chooseMoodView.swift */; };
 		B60FEA2C296B472700944BC2 /* DearDiaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60FEA2B296B472700944BC2 /* DearDiaryApp.swift */; };
 		B60FEA2E296B472700944BC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60FEA2D296B472700944BC2 /* ContentView.swift */; };
 		B60FEA30296B472800944BC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B60FEA2F296B472800944BC2 /* Assets.xcassets */; };
@@ -16,6 +18,9 @@
 		B60FEA42296B472800944BC2 /* DearDiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60FEA41296B472800944BC2 /* DearDiaryTests.swift */; };
 		B60FEA4C296B472800944BC2 /* DearDiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60FEA4B296B472800944BC2 /* DearDiaryUITests.swift */; };
 		B60FEA4E296B472800944BC2 /* DearDiaryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60FEA4D296B472800944BC2 /* DearDiaryUITestsLaunchTests.swift */; };
+		B60FEA5C296B48E100944BC2 /* TrackerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60FEA5B296B48E100944BC2 /* TrackerViewModel.swift */; };
+		B60FEA5F296B490900944BC2 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60FEA5E296B490900944BC2 /* Home.swift */; };
+		B60FEA61296B492A00944BC2 /* AddNewTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60FEA60296B492A00944BC2 /* AddNewTracker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,18 +41,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B60FEA28296B472700944BC2 /* DearDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DearDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BA68CED296BF29D00644531 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4BA68CF0296BF41900644531 /* chooseMoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chooseMoodView.swift; sourceTree = "<group>"; };
+		B60FEA28296B472700944BC2 /* DearDiary2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DearDiary2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B60FEA2B296B472700944BC2 /* DearDiaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DearDiaryApp.swift; sourceTree = "<group>"; };
 		B60FEA2D296B472700944BC2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B60FEA2F296B472800944BC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B60FEA32296B472800944BC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B60FEA34296B472800944BC2 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		B60FEA37296B472800944BC2 /* DearDiary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DearDiary.xcdatamodel; sourceTree = "<group>"; };
-		B60FEA3D296B472800944BC2 /* DearDiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DearDiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B60FEA3D296B472800944BC2 /* DearDiary2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DearDiary2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B60FEA41296B472800944BC2 /* DearDiaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DearDiaryTests.swift; sourceTree = "<group>"; };
-		B60FEA47296B472800944BC2 /* DearDiaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DearDiaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B60FEA47296B472800944BC2 /* DearDiary2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DearDiary2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B60FEA4B296B472800944BC2 /* DearDiaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DearDiaryUITests.swift; sourceTree = "<group>"; };
 		B60FEA4D296B472800944BC2 /* DearDiaryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DearDiaryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B60FEA5B296B48E100944BC2 /* TrackerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerViewModel.swift; sourceTree = "<group>"; };
+		B60FEA5E296B490900944BC2 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		B60FEA60296B492A00944BC2 /* AddNewTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTracker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,7 @@
 		B60FEA1F296B472700944BC2 = {
 			isa = PBXGroup;
 			children = (
+				4BA68CEE296BF29D00644531 /* Localizable.strings */,
 				B60FEA2A296B472700944BC2 /* DearDiary */,
 				B60FEA40296B472800944BC2 /* DearDiaryTests */,
 				B60FEA4A296B472800944BC2 /* DearDiaryUITests */,
@@ -88,9 +99,9 @@
 		B60FEA29296B472700944BC2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B60FEA28296B472700944BC2 /* DearDiary.app */,
-				B60FEA3D296B472800944BC2 /* DearDiaryTests.xctest */,
-				B60FEA47296B472800944BC2 /* DearDiaryUITests.xctest */,
+				B60FEA28296B472700944BC2 /* DearDiary2.app */,
+				B60FEA3D296B472800944BC2 /* DearDiary2Tests.xctest */,
+				B60FEA47296B472800944BC2 /* DearDiary2UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +109,7 @@
 		B60FEA2A296B472700944BC2 /* DearDiary */ = {
 			isa = PBXGroup;
 			children = (
+				B60FEA5A296B48A500944BC2 /* ViewModel */,
 				B60FEA2B296B472700944BC2 /* DearDiaryApp.swift */,
 				B60FEA2D296B472700944BC2 /* ContentView.swift */,
 				B60FEA2F296B472800944BC2 /* Assets.xcassets */,
@@ -133,12 +145,31 @@
 			path = DearDiaryUITests;
 			sourceTree = "<group>";
 		};
+		B60FEA5A296B48A500944BC2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B60FEA5B296B48E100944BC2 /* TrackerViewModel.swift */,
+				B60FEA5D296B48E900944BC2 /* Viwe */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B60FEA5D296B48E900944BC2 /* Viwe */ = {
+			isa = PBXGroup;
+			children = (
+				B60FEA60296B492A00944BC2 /* AddNewTracker.swift */,
+				B60FEA5E296B490900944BC2 /* Home.swift */,
+				4BA68CF0296BF41900644531 /* chooseMoodView.swift */,
+			);
+			path = Viwe;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B60FEA27296B472700944BC2 /* DearDiary */ = {
+		B60FEA27296B472700944BC2 /* DearDiary2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B60FEA51296B472800944BC2 /* Build configuration list for PBXNativeTarget "DearDiary" */;
+			buildConfigurationList = B60FEA51296B472800944BC2 /* Build configuration list for PBXNativeTarget "DearDiary2" */;
 			buildPhases = (
 				B60FEA24296B472700944BC2 /* Sources */,
 				B60FEA25296B472700944BC2 /* Frameworks */,
@@ -148,14 +179,14 @@
 			);
 			dependencies = (
 			);
-			name = DearDiary;
+			name = DearDiary2;
 			productName = DearDiary;
-			productReference = B60FEA28296B472700944BC2 /* DearDiary.app */;
+			productReference = B60FEA28296B472700944BC2 /* DearDiary2.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B60FEA3C296B472800944BC2 /* DearDiaryTests */ = {
+		B60FEA3C296B472800944BC2 /* DearDiary2Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B60FEA54296B472800944BC2 /* Build configuration list for PBXNativeTarget "DearDiaryTests" */;
+			buildConfigurationList = B60FEA54296B472800944BC2 /* Build configuration list for PBXNativeTarget "DearDiary2Tests" */;
 			buildPhases = (
 				B60FEA39296B472800944BC2 /* Sources */,
 				B60FEA3A296B472800944BC2 /* Frameworks */,
@@ -166,14 +197,14 @@
 			dependencies = (
 				B60FEA3F296B472800944BC2 /* PBXTargetDependency */,
 			);
-			name = DearDiaryTests;
+			name = DearDiary2Tests;
 			productName = DearDiaryTests;
-			productReference = B60FEA3D296B472800944BC2 /* DearDiaryTests.xctest */;
+			productReference = B60FEA3D296B472800944BC2 /* DearDiary2Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B60FEA46296B472800944BC2 /* DearDiaryUITests */ = {
+		B60FEA46296B472800944BC2 /* DearDiary2UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B60FEA57296B472800944BC2 /* Build configuration list for PBXNativeTarget "DearDiaryUITests" */;
+			buildConfigurationList = B60FEA57296B472800944BC2 /* Build configuration list for PBXNativeTarget "DearDiary2UITests" */;
 			buildPhases = (
 				B60FEA43296B472800944BC2 /* Sources */,
 				B60FEA44296B472800944BC2 /* Frameworks */,
@@ -184,9 +215,9 @@
 			dependencies = (
 				B60FEA49296B472800944BC2 /* PBXTargetDependency */,
 			);
-			name = DearDiaryUITests;
+			name = DearDiary2UITests;
 			productName = DearDiaryUITests;
-			productReference = B60FEA47296B472800944BC2 /* DearDiaryUITests.xctest */;
+			productReference = B60FEA47296B472800944BC2 /* DearDiary2UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -212,22 +243,23 @@
 					};
 				};
 			};
-			buildConfigurationList = B60FEA23296B472700944BC2 /* Build configuration list for PBXProject "DearDiary" */;
+			buildConfigurationList = B60FEA23296B472700944BC2 /* Build configuration list for PBXProject "DearDiary2" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = B60FEA1F296B472700944BC2;
 			productRefGroup = B60FEA29296B472700944BC2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B60FEA27296B472700944BC2 /* DearDiary */,
-				B60FEA3C296B472800944BC2 /* DearDiaryTests */,
-				B60FEA46296B472800944BC2 /* DearDiaryUITests */,
+				B60FEA27296B472700944BC2 /* DearDiary2 */,
+				B60FEA3C296B472800944BC2 /* DearDiary2Tests */,
+				B60FEA46296B472800944BC2 /* DearDiary2UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B60FEA33296B472800944BC2 /* Preview Assets.xcassets in Resources */,
+				4BA68CEC296BF29D00644531 /* Localizable.strings in Resources */,
 				B60FEA30296B472800944BC2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +299,11 @@
 				B60FEA35296B472800944BC2 /* Persistence.swift in Sources */,
 				B60FEA2E296B472700944BC2 /* ContentView.swift in Sources */,
 				B60FEA2C296B472700944BC2 /* DearDiaryApp.swift in Sources */,
+				B60FEA5C296B48E100944BC2 /* TrackerViewModel.swift in Sources */,
+				B60FEA61296B492A00944BC2 /* AddNewTracker.swift in Sources */,
+				B60FEA5F296B490900944BC2 /* Home.swift in Sources */,
 				B60FEA38296B472800944BC2 /* DearDiary.xcdatamodeld in Sources */,
+				4BA68CF1296BF41900644531 /* chooseMoodView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,15 +329,26 @@
 /* Begin PBXTargetDependency section */
 		B60FEA3F296B472800944BC2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B60FEA27296B472700944BC2 /* DearDiary */;
+			target = B60FEA27296B472700944BC2 /* DearDiary2 */;
 			targetProxy = B60FEA3E296B472800944BC2 /* PBXContainerItemProxy */;
 		};
 		B60FEA49296B472800944BC2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B60FEA27296B472700944BC2 /* DearDiary */;
+			target = B60FEA27296B472700944BC2 /* DearDiary2 */;
 			targetProxy = B60FEA48296B472800944BC2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4BA68CEE296BF29D00644531 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BA68CED296BF29D00644531 /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B60FEA4F296B472800944BC2 /* Debug */ = {
@@ -425,6 +473,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DearDiary/Preview Content\"";
+				DEVELOPMENT_TEAM = 6B9Z9DVNKS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -453,6 +502,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DearDiary/Preview Content\"";
+				DEVELOPMENT_TEAM = 6B9Z9DVNKS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -488,7 +538,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DearDiary.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DearDiary";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DearDiary2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DearDiary2";
 			};
 			name = Debug;
 		};
@@ -507,7 +557,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DearDiary.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DearDiary";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DearDiary2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DearDiary2";
 			};
 			name = Release;
 		};
@@ -548,7 +598,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B60FEA23296B472700944BC2 /* Build configuration list for PBXProject "DearDiary" */ = {
+		B60FEA23296B472700944BC2 /* Build configuration list for PBXProject "DearDiary2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B60FEA4F296B472800944BC2 /* Debug */,
@@ -557,7 +607,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B60FEA51296B472800944BC2 /* Build configuration list for PBXNativeTarget "DearDiary" */ = {
+		B60FEA51296B472800944BC2 /* Build configuration list for PBXNativeTarget "DearDiary2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B60FEA52296B472800944BC2 /* Debug */,
@@ -566,7 +616,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B60FEA54296B472800944BC2 /* Build configuration list for PBXNativeTarget "DearDiaryTests" */ = {
+		B60FEA54296B472800944BC2 /* Build configuration list for PBXNativeTarget "DearDiary2Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B60FEA55296B472800944BC2 /* Debug */,
@@ -575,7 +625,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B60FEA57296B472800944BC2 /* Build configuration list for PBXNativeTarget "DearDiaryUITests" */ = {
+		B60FEA57296B472800944BC2 /* Build configuration list for PBXNativeTarget "DearDiary2UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B60FEA58296B472800944BC2 /* Debug */,
