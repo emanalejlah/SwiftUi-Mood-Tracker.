@@ -5,3 +5,16 @@
   Created by Maha Binmadhi on 09/01/2023.
   
 */
+"How are you today?" = "كيف حالك اليوم؟";
+"Edit" = "تعديل";
+"Delete" = "حذف";
+"Cancel" = "إلغاء";
+"How are you feeling today?" = "كيف تشعر اليوم؟";
+"Happy" = "سعيد";
+"Sad" = "حزين";
+"Angry" = "غاضب";
+"Neutral" = "محايد";
+"Select your mood" = "اختار مزاجك";
+"What are the reasons behind this feeling?" = "ماهي الأسباب خلف شعورك الحالي؟";
+"Express yourself" = "عبر عن مشاعرك";
+"Save" = "حفظ";

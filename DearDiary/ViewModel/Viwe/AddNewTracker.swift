@@ -61,7 +61,11 @@ struct AddNewTracker: View {
                 }
 
                 
-            let TrackerTypes : [String] = ["Happy","Sad","Angry" ,"Neutral"]
+            let TrackerTypes : [String] = [NSLocalizedString("Happy", comment: ""),
+                 NSLocalizedString("Sad", comment: ""),
+                 NSLocalizedString("Angry", comment: ""),
+                 NSLocalizedString("Neutral", comment: "")
+            ]
             VStack(spacing: 2.0){
                     Text("Select your mood")
                         .font(.caption)
@@ -125,7 +129,7 @@ struct AddNewTracker: View {
                     .frame(maxWidth:.infinity,alignment: .leading)
             
             VStack(alignment: .leading,spacing: 12){
-                Text("What are the reasons behind this feeling? ")
+                Text("What are the reasons behind this feeling?")
                     .font(.callout.weight(.semibold))
                     .foregroundColor(.black)
                 TextField("Express yourself",text: $TrackerModel.TrackerTitle)
