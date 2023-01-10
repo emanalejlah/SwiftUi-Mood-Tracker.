@@ -14,7 +14,7 @@ struct AddNewTracker: View {
     var body: some View {
         VStack(alignment:.center, spacing: 5.0) {
             Text(TrackerModel.openEditTracker ? "Edit" : "How are you feeling today?")
-                .accessibilityLabel(Text("How are you feeling today?"))
+                .accessibilityLabel(Text(TrackerModel.openEditTracker ? "Edit" : "How are you feeling today?"))
                 .font(.title3.bold())
                 .frame(maxWidth: .infinity)
             VStack(alignment: .leading,spacing: 5.0){
@@ -38,20 +38,7 @@ struct AddNewTracker: View {
                     }
                 }
             }.frame(maxWidth:.infinity,alignment: .leading)
-                .overlay(alignment: .bottomTrailing){
-                    
-                    
-                    Button{
-                        TrackerModel.showDatePicker.toggle()
-                        print(TrackerModel.showDatePicker)
-                        
-                        print("calender pickk")
-                    } label: {
-                        Image(systemName: "calendar")
-                            .foregroundColor(.black)
-                            .font(.title2)
-                    }
-                }
+                
             
             
             

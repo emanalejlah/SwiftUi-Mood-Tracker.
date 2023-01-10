@@ -34,6 +34,7 @@ struct Home: View {
                         ZStack{
                             Image("bg").resizable().containerShape(RoundedRectangle(cornerRadius: 8)).frame(width: 334, height: 124)
                             Text("How are you today?").fontWeight(.bold).foregroundColor(.white).font(.system(size: 21, design: .rounded))
+                            
                         }
                         .padding(.vertical, 30.0)
                     }.sheet(isPresented: $isShowingSheet) {

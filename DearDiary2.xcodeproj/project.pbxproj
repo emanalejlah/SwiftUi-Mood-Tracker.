@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4BA68CEC296BF29D00644531 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BA68CEE296BF29D00644531 /* Localizable.strings */; };
-		4BA68CF1296BF41900644531 /* chooseMoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA68CF0296BF41900644531 /* chooseMoodView.swift */; };
 		B60FEA2C296B472700944BC2 /* DearDiaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60FEA2B296B472700944BC2 /* DearDiaryApp.swift */; };
 		B60FEA30296B472800944BC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B60FEA2F296B472800944BC2 /* Assets.xcassets */; };
 		B60FEA33296B472800944BC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B60FEA32296B472800944BC2 /* Preview Assets.xcassets */; };
@@ -42,7 +41,6 @@
 
 /* Begin PBXFileReference section */
 		4BA68CED296BF29D00644531 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
-		4BA68CF0296BF41900644531 /* chooseMoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chooseMoodView.swift; sourceTree = "<group>"; };
 		B60FEA28296B472700944BC2 /* DearDiary2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DearDiary2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B60FEA2B296B472700944BC2 /* DearDiaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DearDiaryApp.swift; sourceTree = "<group>"; };
 		B60FEA2F296B472800944BC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -158,7 +156,6 @@
 			children = (
 				B60FEA60296B492A00944BC2 /* AddNewTracker.swift */,
 				B60FEA5E296B490900944BC2 /* Home.swift */,
-				4BA68CF0296BF41900644531 /* chooseMoodView.swift */,
 				B6D30387296CA78E0051CDE2 /* ContentView.swift */,
 			);
 			path = Viwe;
@@ -303,7 +300,6 @@
 				B60FEA61296B492A00944BC2 /* AddNewTracker.swift in Sources */,
 				B60FEA5F296B490900944BC2 /* Home.swift in Sources */,
 				B60FEA38296B472800944BC2 /* DearDiary.xcdatamodeld in Sources */,
-				4BA68CF1296BF41900644531 /* chooseMoodView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
