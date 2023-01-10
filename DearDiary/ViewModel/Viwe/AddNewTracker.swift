@@ -61,7 +61,7 @@ struct AddNewTracker: View {
                 }
 
                 
-            let taskTypes : [String] = ["Happy","Sad","Angry" ,"Neutral"]
+            let TrackerTypes : [String] = ["Happy","Sad","Angry" ,"Neutral"]
             VStack(spacing: 2.0){
                     Text("Select your mood")
                         .font(.caption)
@@ -93,7 +93,7 @@ struct AddNewTracker: View {
                         }
                     }
                     HStack(spacing:12){
-                        ForEach(taskTypes, id: \.self){
+                        ForEach(TrackerTypes, id: \.self){
                             type in
                             Text(type)
                                 .lineLimit(2)
