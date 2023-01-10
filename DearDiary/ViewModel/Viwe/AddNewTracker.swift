@@ -13,7 +13,7 @@ struct AddNewTracker: View {
     
     var body: some View {
         VStack(alignment:.center, spacing: 5.0) {
-            Text(TrackerModel.openEditTracker ? "Edit Tracker" : "How are you feeling today?")
+            Text(TrackerModel.openEditTracker ? "Edit" : "How are you feeling today?")
                 .accessibilityLabel(Text("How are you feeling today?"))
                 .font(.title3.bold())
                 .frame(maxWidth: .infinity)

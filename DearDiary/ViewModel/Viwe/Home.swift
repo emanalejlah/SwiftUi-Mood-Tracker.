@@ -35,6 +35,7 @@ struct Home: View {
                             Image("bg").resizable().containerShape(RoundedRectangle(cornerRadius: 8)).frame(width: 334, height: 124)
                             Text("How are you today?").fontWeight(.bold).foregroundColor(.white).font(.system(size: 21, design: .rounded))
                         }
+                        .padding(.vertical, 30.0)
                     }.sheet(isPresented: $isShowingSheet) {
                         
                         AddNewTracker()
@@ -94,13 +95,12 @@ struct Home: View {
             VStack(alignment:.leading, spacing: 20){
                 HStack{
                     Text(mood.type ?? "")
+                        .fontWeight(.bold)
                         .accessibility(label:(Text(mood.type ?? "")))
 
-                        .font(.callout)
+                        .font(.title2)
 
-                        .background{
-                            Capsule().fill(.white.opacity(0.3))
-                        }
+                        
                     Spacer()
                     
                     Menu {
@@ -117,9 +117,9 @@ struct Home: View {
                         Button("Delete", action: {deleteItems2(mood)})
                         Button("Cancel", action: {})
                     } label: {
-                        Image(systemName: "ellipsis.circle")
+                        Image(systemName: "square.and.pencil")
                            
-                            .font(.system(size: 26.0, weight: .bold))
+                            .font(.system(size: 21))
                             .foregroundColor(.black)
                            
                         
@@ -128,7 +128,7 @@ struct Home: View {
                 }
                 Text(mood.title ?? "")
                     .accessibility(label:(Text(mood.title ?? "")))
-                    .font(.title2.bold())
+                    .font(.body)
                     .foregroundColor(.black)
                 HStack(alignment:.bottom,spacing: 0){
                     VStack(alignment:.leading,spacing: 10){
