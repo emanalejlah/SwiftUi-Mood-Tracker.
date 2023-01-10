@@ -72,6 +72,7 @@ struct Home: View {
         LazyVStack(spacing:20){
             ForEach(moods){ mood in
                 TrackerRowView(mood:mood)
+                   
 
             }
         }
@@ -93,6 +94,8 @@ struct Home: View {
             VStack(alignment:.leading, spacing: 20){
                 HStack{
                     Text(mood.type ?? "")
+                        .accessibility(label:(Text(mood.type ?? "")))
+
                         .font(.callout)
 
                         .background{
@@ -110,17 +113,21 @@ struct Home: View {
                                 TrackerModel.setupTask()
                                 isShowingSheet = true
                             }
-                        })
+                        }).accessibility(label:(Text("Open edit Menu")))
                         Button("Delete", action: {deleteItems2(mood)})
                         Button("Cancel", action: {})
                     } label: {
                         Image(systemName: "ellipsis.circle")
-                        
+                           
                             .font(.system(size: 26.0, weight: .bold))
                             .foregroundColor(.black)
-                    }
+                           
+                        
+                        
+                    }.accessibility(label:(Text("Open Edit Menu")))
                 }
                 Text(mood.title ?? "")
+                    .accessibility(label:(Text(mood.title ?? "")))
                     .font(.title2.bold())
                     .foregroundColor(.black)
                 HStack(alignment:.bottom,spacing: 0){
@@ -129,14 +136,20 @@ struct Home: View {
                             Text((mood.deadline ?? Date()).formatted(date: .long, time:.omitted))
                         } icon: {
                             Image(systemName: "calendar")
-                        }
+                        }.accessibility(label:(Text("calendar")))
+                            .accessibility(label: Text((mood.deadline ?? Date()).formatted(date: .long, time:.omitted)))
                         .font(.caption)
                         Label{
                             Text((mood.deadline ?? Date()).formatted(date: .omitted, time:.shortened))
-                        } icon: {
+                               
+                        }
+                    icon: {
                             Image(systemName: "clock")
                         }.font(.caption)
+                            .accessibility(label:(Text("clock")))
+                            .accessibility(label: Text((mood.deadline ?? Date()).formatted(date: .omitted, time:.shortened)))
                     }
+                    
                     .frame(maxWidth:.infinity,alignment: .leading)
                     
                 }
@@ -145,11 +158,7 @@ struct Home: View {
                 .frame(width: 300
                        ,height: 100)
 
-                .background{
-                    RoundedRectangle(cornerRadius: 8,style: .continuous)
-                        .fill(Color(mood.type ?? "happy"))
-                    
-                }
+            
             
            
         }

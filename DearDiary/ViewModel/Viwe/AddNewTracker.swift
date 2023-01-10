@@ -14,6 +14,7 @@ struct AddNewTracker: View {
     var body: some View {
         VStack(alignment:.center, spacing: 5.0) {
             Text(TrackerModel.openEditTracker ? "Edit Tracker" : "How are you feeling today?")
+                .accessibilityLabel(Text("How are you feeling today?"))
                 .font(.title3.bold())
                 .frame(maxWidth: .infinity)
             VStack(alignment: .leading,spacing: 5.0){
@@ -68,6 +69,7 @@ struct AddNewTracker: View {
             ]
             VStack(spacing: 2.0){
                     Text("Select your mood")
+                    .accessibilityLabel(Text("Select your mood"))
                         .font(.caption)
                         .foregroundColor(.gray)
                         .padding(30)
@@ -100,6 +102,7 @@ struct AddNewTracker: View {
                         ForEach(TrackerTypes, id: \.self){
                             type in
                             Text(type)
+                                .accessibility(label:(Text(type)))
                                 .lineLimit(2)
                                 .font(.callout)
                                 .padding(.vertical,10)
@@ -117,6 +120,7 @@ struct AddNewTracker: View {
                                     withAnimation{TrackerModel.TrackerType = type}
                                 }
                         }
+                       
                         
 
                     }            .frame(maxWidth:.infinity,alignment: .leading)
@@ -130,6 +134,7 @@ struct AddNewTracker: View {
             
             VStack(alignment: .leading,spacing: 12){
                 Text("What are the reasons behind this feeling?")
+                    .accessibilityLabel(Text("What are the reasons behind this feeling?"))
                     .font(.callout.weight(.semibold))
                     .foregroundColor(.black)
                 TextField("Express yourself",text: $TrackerModel.TrackerTitle)
@@ -152,6 +157,8 @@ struct AddNewTracker: View {
                 
             }label: {
                 Text("Save")
+                    .accessibility(label:(Text("Save")))
+                
                     .padding()
                     .foregroundColor(.white)
                     .font(.system(size: 21, design: .rounded))
