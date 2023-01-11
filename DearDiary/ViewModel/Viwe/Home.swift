@@ -29,28 +29,53 @@ struct Home: View {
                         TrackerModel.resetData()
                         
                         isShowingSheet = true
-                        
+                      
                     } label: {
+                      
                         ZStack{
                             Image("bg").resizable().containerShape(RoundedRectangle(cornerRadius: 8)).frame(width: 334, height: 124)
-                            Text("How are you today?").fontWeight(.bold).foregroundColor(.white).font(.system(size: 21, design: .rounded))
-                            
+                            Text("How are you today?")
+                                .accessibilityLabel(Text("How are you today?"))
+                                .fontWeight(.bold).foregroundColor(.white).font(.system(size: 21, design: .rounded))
+                         
+                           
                         }
+
+                            .foregroundColor(.black)
                         .padding(.vertical, 30.0)
+                   
+                    
                     }.sheet(isPresented: $isShowingSheet) {
-                        
                         AddNewTracker()
                             .environmentObject(TrackerModel)
+                        
                     }.onAppear{
                         
                     }
-                    
-                    
+                    VStack(){
+                        Text("Track Your Mood")
+                            .accessibilityLabel(Text("Track Your Mood"))
+                            .padding(.trailing, 160)
+                            .fontWeight(.bold)
+                            .font(.system(size: 21, design: .rounded))
+                         
+                        
+                    }
+
                     TrackerView()
                 }.frame(maxWidth: .infinity, alignment: .leading)
+       
+
             }
+            .padding(.top)
+       
+                
             .padding()
+          
         }
+        
+            
+        
     }
     
     private func deleteItems2(_ item: Mood) {
@@ -80,11 +105,13 @@ struct Home: View {
         }
         
     }
+        
     
     
     
     @ViewBuilder
     func TrackerRowView(mood:Mood)->some View{
+      
         ZStack{
             
             RoundedRectangle(cornerRadius: 8, style: .continuous)
@@ -97,9 +124,12 @@ struct Home: View {
                 HStack{
                     Text(mood.type ?? "")
                         .fontWeight(.bold)
+                        
                         .accessibility(label:(Text(mood.type ?? "")))
+                        .font(.system(size: 18, design: .rounded))
+                     
 
-                        .font(.title2)
+                       
 
                         
                     Spacer()
@@ -111,7 +141,7 @@ struct Home: View {
                                 TrackerModel.editTracker = mood
                                 
                                 
-                                TrackerModel.setupTask()
+                                TrackerModel.setupTracker()
                                 isShowingSheet = true
                             }
                         }).accessibility(label:(Text("Open edit Menu")))
@@ -120,7 +150,7 @@ struct Home: View {
                     } label: {
                         Image(systemName: "square.and.pencil")
                            
-                            .font(.system(size: 21))
+                            .font(.system(size: 18))
                             .foregroundColor(.black)
                            
                         
@@ -129,7 +159,8 @@ struct Home: View {
                 }
                 Text(mood.title ?? "")
                     .accessibility(label:(Text(mood.title ?? "")))
-                    .font(.body)
+                    .font(.system(size: 16, design: .rounded))
+                 
                     .foregroundColor(.black)
                 HStack(alignment:.bottom,spacing: 0){
                     VStack(alignment:.leading,spacing: 10){

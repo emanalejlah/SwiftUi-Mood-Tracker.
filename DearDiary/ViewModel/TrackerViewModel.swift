@@ -12,10 +12,8 @@ import SwiftUI
 
 class TrackerViewModel : ObservableObject {
 
-    
     @Published var openEditTracker: Bool = false
     @Published var TrackerTitle: String = ""
-//    @Published var taskColor: String = ""
     @Published var TrackerDeadline: Date = Date()
       @Published var TrackerType: String = "Basic"
     @Published var showDatePicker: Bool = false
@@ -60,12 +58,12 @@ class TrackerViewModel : ObservableObject {
         openEditTracker = false
     }
     
-    func setupTask(){
+    func setupTracker(){
         
         
         if let editTracker = editTracker {
          
-//            taskColor = editTask.color ?? "Pink"
+
             TrackerTitle = editTracker.title ?? ""
             TrackerDeadline = editTracker.deadline ?? Date()
         }
