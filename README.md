@@ -1,3 +1,5 @@
+# Logo
+![mood logo](https://user-images.githubusercontent.com/116960445/212016326-5979f2fe-749b-4057-825b-e77b6106f780.jpg)
 # Big idea
 create an opportunity to express feelings and emotions in private diary for people whose afraid to share them.
 # Challenge statment
