@@ -52,7 +52,7 @@ struct Home: View {
                     }.onAppear{
                         
                     }
-                    VStack(){
+                    VStack{
                         Text("Track Your Mood")
                             .accessibilityLabel(Text("Track Your Mood"))
                             .padding(.trailing, 160)
@@ -205,3 +205,4 @@ struct Home_Previews: PreviewProvider {
     }
 }
 
+//
